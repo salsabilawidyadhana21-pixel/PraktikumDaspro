@@ -10,11 +10,10 @@ public static void main(String[] args) {
      System.out.println("Apakah UKT sudah dibayar? (true/false): ");
      boolean uktLunas = sc.nextBoolean();
 
-     if (uktLunas) {
-          System.out.println("Pembayaran UKT terverifikasi");
-          System.out.println("silahkan cetak KRS dan minta tanda tangan DPA");
+     String hasil = (uktLunas) ? "Pembayaran UKT terverifikasi \n Silakan cetak KRS dan minta tanda tangan DPA" 
+     : "Registrasi ditolak. Silakan membayar UKT terlebih dahulu";          
+     System.out.println(hasil);
 
      }
 
-}
 }
