@@ -9,12 +9,12 @@ public class nestedUjianSkripsi25 {
         String pesan;
         System.out.print("Apakah mahasiswa sudah bebas kompen? (Ya/Tidak): ");
         String bebasKompen = sc.nextLine().trim();
-         System.out.print("Masukkan jumlah log bimbingan Pembimbing 1: ");
-         int bimbinganP1 = sc.nextInt();
-         System.out.print("Masukkan jumlah log bimbingan Pembimbing 2: ");
-         int bimbinganP2 = sc.nextInt();
+        System.out.print("Masukkan jumlah log bimbingan Pembimbing 1: ");
+        int bimbinganP1 = sc.nextInt();
+        System.out.print("Masukkan jumlah log bimbingan Pembimbing 2: ");
+        int bimbinganP2 = sc.nextInt();
 
-         if (bebasKompen.equalsIgnoreCase(anotherString:"Ya")) {
+         if (bebasKompen.equalsIgnoreCase("Ya")) {
             if (bimbinganP1 >= 8 && bimbinganP2 >= 4) {
                 pesan = "Semua syarat terpenuhi. Mahasiswa boleh mendaftar ujian skripsi";
             }else if (bimbinganP1 < 8 && bimbinganP2 < 4) {
@@ -29,12 +29,14 @@ public class nestedUjianSkripsi25 {
             pesan = "gagal! Mahasiswa masih memiliki tanggungan kompen";
 
         }
-        Sytem.out.println(pesan);
-     }
+        System.out.println(pesan);
+    }
+}
+    
 
 
 
 
 
     
-}
+
