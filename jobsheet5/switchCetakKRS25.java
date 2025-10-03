@@ -3,36 +3,91 @@ package jobsheet5;
 import java.util.Scanner;
 public class switchCetakKRS25 {
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);  Resource leak: 'sc' is never closed 
         System.out.println("--- Cetak KRS SIAKAD ---");
         System.out.print("Masukkan semester saat ini: ");
         int semester = sc.nextInt();
-        switch (semester) {
-            case 1:
-            System.out.println("KRS semester 1 ditampilkan");
-            break;
-            case 2:
-            System.out.println("KRS semester 2 ditampilkan");
-            break;
-            case 3: 
-            System.out.println("KRS semester 3 ditampilkan");
-            break;
-            case 4: 
-            System.out.println("KRS semester 4 ditampilkan");
-            break;
-            case 5:
-            System.out.println("KRS semester 5 ditampilkan");
-            break;
-            case 6:
-            System.out.println("KRS semester 6 ditampilkan");
-            break;
-            case 7:
-            System.out.println("KRS semester 7 ditampilkan");
-            case 8:
-            System.out.println("KRS semester 8 ditampilkan");
-            default:
-            System.out.println("Semester tidak valid");
-
+         
+        if (semester == 1){
+           System.out.println("KRS Semester 1 ditampilkan");
+         } 
+         else if (semester == 2){
+            System.out.println("KRS Semester 2 ditampilkan");
+        }
+        else if (semester == 3){
+            System.out.println("KRS Semester 3 ditampilkan");
+        }
+        else if (semester == 4){
+            System.out.println("KRS Semester 4 ditampilkan");
+        }
+        else if (semester == 5){
+            System.out.println("KRS Semester 5 ditampilkan");
+        }
+        else if (semester == 6){
+            System.out.println("KRS Semester 6 ditampilkan");
+        }
+        else if (semester == 7){
+            System.out.println("KRS Semester 7 ditampilkan");
+        }
+        else if (semester == 8){
+            System.out.println("KRS Semester 8 ditampilkan");
+        }
+        else {
+            System.out.println("Semester tidak valid");}
+        }
+    } if (semester == 1){
+           System.out.println("KRS Semester 1 ditampilkan");
+         } 
+         else if (semester == 2){
+            System.out.println("KRS Semester 2 ditampilkan");
+        }
+        else if (semester == 3){
+            System.out.println("KRS Semester 3 ditampilkan");
+        }
+        else if (semester == 4){
+            System.out.println("KRS Semester 4 ditampilkan");
+        }
+        else if (semester == 5){
+            System.out.println("KRS Semester 5 ditampilkan");
+        }
+        else if (semester == 6){
+            System.out.println("KRS Semester 6 ditampilkan");
+        }
+        else if (semester == 7){
+            System.out.println("KRS Semester 7 ditampilkan");
+        }
+        else if (semester == 8){
+            System.out.println("KRS Semester 8 ditampilkan");
+        }
+        else {
+            System.out.println("Semester tidak valid");}
+        
+        } if (semester == 1){
+           System.out.println("KRS Semester 1 ditampilkan");
+         } 
+         else if (semester == 2){
+            System.out.println("KRS Semester 2 ditampilkan");
+        }
+        else if (semester == 3){
+            System.out.println("KRS Semester 3 ditampilkan");
+        }
+        else if (semester == 4){
+            System.out.println("KRS Semester 4 ditampilkan");
+        }
+        else if (semester == 5){
+            System.out.println("KRS Semester 5 ditampilkan");
+        }
+        else if (semester == 6){
+            System.out.println("KRS Semester 6 ditampilkan");
+        }
+        else if (semester == 7){
+            System.out.println("KRS Semester 7 ditampilkan");
+        }
+        else if (semester == 8){
+            System.out.println("KRS Semester 8 ditampilkan");
+        }
+        else {
+            System.out.println("Semester tidak valid");}
         }
     }
 }
