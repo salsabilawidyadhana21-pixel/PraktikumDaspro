@@ -38,7 +38,7 @@ public class SiakadFor25 {
             }
         }
 
-        // Output Hasil 
+        // Output hasil 
         System.out.println("\n--- Hasil Analisis Nilai ---");
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
