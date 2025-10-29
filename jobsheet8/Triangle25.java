@@ -9,13 +9,17 @@ public class Triangle25 {
         int i = 0;
         while (i <= n) { // Outer loop 
             int j = 0;
-            while (j < i) { // Inner loop
+            while (j < i) { // Inner loop 
                 System.out.print("*");
                 j++;
             }
-            i++;
+            
+            // SINTAKS UNTUK MEMBENTUK SEGITIGA:
+            System.out.println(); 
+            
+            i++; 
         }
-
+        
         sc.close();
     }
 }
