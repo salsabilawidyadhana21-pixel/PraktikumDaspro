@@ -3,7 +3,7 @@ public class ArrayBilangan25 {
         
         int[] bil = new int[4]; 
 
-        // Isi masing-masing elemen array bil dengan angka 5, 13, -7, 17
+        // Isi masing-masing elemen array bil dengan angka 5, 13, -7, 17.
         bil[0] = 5;    
         bil[1] = 13;   
         bil[2] = -7;   
