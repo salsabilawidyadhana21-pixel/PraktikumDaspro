@@ -1,25 +1,46 @@
+import java.util.Scanner;
+
 public class SearchNilai25 { 
     public static void main(String[] args) {
-        // Deklarasi dan Inisialisasi array arrNilai
-        int[] arrNilai = {80, 85, 78, 96, 90, 82, 86}; 
+        Scanner sc = new Scanner(System.in); 
+        
+        // Input banyaknya elemen array
+        System.out.print("Masukkan banyaknya nilai yang akan diinput: "); 
+        int jmlElemen = sc.nextInt();
+        
+        // Deklarasi array sesuai input jumlah elemen
+        int[] arrNilai = new int[jmlElemen];
+        
+        // Inisialisasi hasil dengan -1. Digunakan sebagai indikator 'tidak ditemukan'.
+        int hasil = -1; 
 
-        // Nilai (key) yang ingin dicari
-        int key = 90; 
+        // Input isi array
+        for (int i = 0; i < arrNilai.length; i++) {
+            System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ":\n"); // Menggunakan i+1 agar dimulai dari 1
+            arrNilai[i] = sc.nextInt();
+        }
 
-        // Variabel untuk menyimpan indeks hasil pencarian
-        int hasil = 0; 
+        // Input nilai (key) yang ingin dicari
+        System.out.print("Masukkan nilai yang ingin dicari: "); 
+        int key = sc.nextInt();
 
-        // Melakukan linear search
-        for (int i = 0; i < arrNilai.length; i++) { 
-            if (key == arrNilai[i]) { 
-                hasil = i; 
-                break; 
+        // Proses linear search
+        for (int i = 0; i < arrNilai.length; i++) {
+            if (key == arrNilai[i]) {
+                hasil = i; // Simpan indeks ditemukan
+                break;     // Hentikan perulangan (optimasi)
             }
         }
 
-        // Menampilkan hasil pencarian
-        System.out.println(); 
-        System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil); 
-        System.out.println(); 
+        // Output hasil pencarian
+        if (hasil != -1) {
+            // Posisi mahasiswa = indeks + 1 (karena user melihatnya mulai dari 1)
+            System.out.println("Nilai " + key + " ketemu, merupakan nilai mahasiswa ke-" + (hasil + 1)); 
+        } else {
+            // Menangani kasus jika nilai tidak ditemukan (sesuai Pertanyaan 3)
+            System.out.println("Nilai yang dicari tidak ditemukan"); 
+        }
+        
+        sc.close();
     }
 }
