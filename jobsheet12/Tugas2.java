@@ -9,7 +9,6 @@ public class Tugas2 {
      */
     static int hitungPenjumlahanRekursif(int n) {
         // Base Case: Jika n = 1, hentikan rekursi dan kembalikan 1.
-        // Penjumlahan deret akan berakhir pada 1.
         if (n == 1) {
             return 1;
         } else {
